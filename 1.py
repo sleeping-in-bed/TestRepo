@@ -1,6 +1,8 @@
 from pathlib import Path
 import cv2
 import sys
+import multiprocessing
+
 
 def overlay_print(s: str) -> None:
     sys.stdout.write(f'\r{s}')      # \r means go back to the beginning of the line
